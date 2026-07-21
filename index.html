@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Homes - Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">
+            <h1>Dream Homes</h1>
+        </div>
+
+        <!-- Hidden Checkbox for Mobile Menu -->
+        <input type="checkbox" id="check">
+
+        <!-- Hamburger Icon -->
+        <label for="check" class="menu-btn">☰</label>
+
+        <!-- Navigation Menu -->
+        <nav class="menu">
+            <a href="#">🏠 Home</a>
+            <a href="#">ℹ About</a>
+            <a href="#">🏘 Properties</a>
+            <a href="#">🛎 Services</a>
+            <a href="#">🖼 Gallery</a>
+            <a href="#">⭐ Reviews</a>
+            <a href="#">📞 Contact</a>
+            <a href="#">📍 Location</a>
+            <a href="#">❓ Help</a>
+            <a href="#">⚙ Settings</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600" alt="House">
+
+        <div class="hero-text">
+            <h1>Find Your Dream Home</h1>
+            <p>Luxury Villas • Apartments • Plots</p>
+            
+            <!-- Link acting as Explore Button -->
+            <a href="#explore-modal" class="explore-btn">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Hidden Content Modal (Reveals on 'Explore Now' click) -->
+    <div id="explore-modal" class="modal-overlay">
+        <div class="modal-content">
+            <a href="#" class="close-btn">&times;</a>
+            <h2>Exclusive Featured Properties</h2>
+            <p>Explore our top-rated real estate listings tailored just for you:</p>
+            
+            <ul class="modal-list">
+                <li>✨ <strong>Sunset Villa:</strong> 4 BHK Luxury Villa with Private Pool & Garden.</li>
+                <li>✨ <strong>Skyline Heights:</strong> Modern 3 BHK Apartment in Downtown.</li>
+                <li>✨ <strong>Green Acres:</strong> Eco-friendly Farmhouse surrounded by nature.</li>
+            </ul>
+
+            <a href="#" class="modal-action-btn">Schedule a Visit</a>
+        </div>
+    </div>
+
+    <!-- Extra Content Section -->
+    <section class="content">
+        <h2>Why Choose Us?</h2>
+        <p>
+            We provide the best real estate properties with affordable prices,
+            modern designs, verified documents, and 24/7 customer support.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🏡 Villas</h3>
+                <p>Luxury villas with modern interiors and private amenities.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏢 Apartments</h3>
+                <p>Affordable apartments in prime, connected locations.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌳 Farm Houses</h3>
+                <p>Beautiful farm houses surrounded by peace and nature.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

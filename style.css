@@ -1,0 +1,239 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    height: 70px;
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+/* Hide Checkbox */
+#check {
+    display: none;
+}
+
+/* Hamburger Button */
+.menu-btn {
+    font-size: 32px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+
+/* Navigation Menu */
+.menu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 230px;
+    background: white;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    z-index: 200;
+}
+
+/* Show Menu on Checkbox Toggle */
+#check:checked ~ .menu {
+    display: flex;
+}
+
+/* Menu Links */
+.menu a {
+    text-decoration: none;
+    color: #222;
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background: #007BFF;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Explore Button */
+.explore-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff9800;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.explore-btn:hover {
+    background: #ff5722;
+}
+
+/* CSS-Only Explore Content Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none; /* Hidden until targeted */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Display modal when clicked via :target */
+.modal-overlay:target {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.modal-content p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.modal-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.modal-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.modal-action-btn {
+    display: block;
+    text-align: center;
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.modal-action-btn:hover {
+    background: #0056b3;
+}
+
+/* Content Section */
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
